@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VelhaGol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+<body>
+  <div class="game-container">
+    <h1>Jogo Da Velha </h1>
+    <div class="scoreboard">
+      <div class="player-card" id="p1Card">
+        <span class="player-name">⚽ Jogador 1</span>
+        <span class="player-score" id="scoreP1">0</span>
+      </div>
+
+      <div class="player-card" id="p2Card">
+        <span class="player-name">👟 Jogador 2</span>
+        <span class="player-score" id="scoreP2">0</span>
+        <div class="watermark">
+  © KA1OKKJ-DEV
+</div>
+      </div>
+    </div>
+
+    <p id="status">Vez do jogador: x</p>
+    <div class="board" id="board"></div>
+
+    <button id="reset">Reiniciar Jogo</button>
+    <button id="resetScore">Zerar Placar</button>
+    <div id="penaltyModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Desempate: Pênalti 🥅</h2>
+      <p id="penaltyInfo">Escolha onde chutar!</p>
+      <div class="penalty-buttons">
+        <button data-shot="esquerda"
+        <i class="bi bi-arrow-left-circle-fill"></i></button>
+        <button data-shot="meio">
+          <i class="bi bi-arrow-up-circle-fill"></i>
+        </button>
+        <button data-shot="direita"><i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </div>
+      <p id="penaltyResult"></p>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
